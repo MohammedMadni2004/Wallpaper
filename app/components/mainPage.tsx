@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { TouchableOpacity,Text,View ,TextInput} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+// import { API_KEY }from '@env';
 
-export default function Main() {
-  
+export default function Main() {  
   async function getData(){
     let finalString='';
     const arr=searchMessage.split(' ');
@@ -15,7 +15,7 @@ export default function Main() {
         finalString+=`${arr[i]}+`
       }
     }
-    const apiKey=process.env.API_KEY;
+    const apiKey='nwwsjex';
     console.log(apiKey);
      const rs=await fetch(`https://pixabay.com/api/?key=${apiKey}&&q=${finalString}&image_type=photo`)
      console.log(rs);

@@ -14,6 +14,7 @@ export default function Home() {
         >
           <Text>go to main</Text>
         </TouchableOpacity>
+        <Text className="text-yellow text-lg font-bold bg-blue-500">NativeWind is working!</Text>
       </View>
     </>
   );
